@@ -87,3 +87,33 @@ Aunque la mayoría de los entornos HPC están optimizados para sistemas basados 
 
 Sin embargo, la comunidad científica y empresarial que utiliza supercomputación sigue prefiriendo distribuciones Linux debido a su flexibilidad, rendimiento y compatibilidad con las bibliotecas y frameworks HPC.
 """)
+
+# Sección 6: Diferencias Técnicas entre HPC y Computadores Convencionales
+st.header("Diferencias Técnicas entre HPC y Computadores Convencionales")
+st.write("""
+Aunque ambos sistemas pueden parecer similares a simple vista, existen diferencias fundamentales entre un sistema de **High-Performance Computing (HPC)** y un computador convencional:
+
+1. **Capacidad de procesamiento paralela**:
+   - Los sistemas HPC están diseñados para ejecutar cálculos en paralelo, con múltiples procesadores (CPU y GPU) trabajando simultáneamente en diferentes partes de un problema.
+   - Los computadores convencionales están optimizados para tareas secuenciales, lo que limita su capacidad de ejecutar múltiples tareas pesadas al mismo tiempo.
+
+2. **Estructura de hardware**:
+   - Un sistema HPC puede estar compuesto por miles de nodos, cada uno con múltiples núcleos de procesamiento, lo que permite manejar enormes cantidades de datos en paralelo.
+   - Un computador convencional generalmente tiene un solo nodo con unos pocos núcleos (normalmente entre 4 y 16).
+
+3. **Redes de baja latencia**:
+   - Los sistemas HPC dependen de redes de interconexión de alta velocidad y baja latencia (por ejemplo, **InfiniBand**), que permiten la rápida transferencia de datos entre los nodos.
+   - En los computadores convencionales, la comunicación entre componentes no está tan optimizada y suele ser más lenta.
+
+4. **Sistemas de archivos**:
+   - Los sistemas HPC utilizan **sistemas de archivos paralelos** como **Lustre** o **GPFS**, que permiten a muchos nodos acceder y escribir en archivos simultáneamente sin cuellos de botella.
+   - En un computador convencional, los sistemas de archivos son mucho más simples y no están diseñados para acceder a archivos a gran escala de manera paralela.
+
+5. **Uso de energía y enfriamiento**:
+   - Los sistemas HPC consumen una gran cantidad de energía y requieren sistemas avanzados de enfriamiento para evitar el sobrecalentamiento.
+   - Un computador convencional tiene requisitos mucho menores en cuanto a energía y enfriamiento.
+
+6. **Optimización del software**:
+   - El software utilizado en HPC está optimizado para aprovechar las arquitecturas paralelas y puede estar diseñado para ejecutarse en múltiples nodos simultáneamente.
+   - En los computadores convencionales, el software no suele estar optimizado para entornos paralelos y distribuidos, limitando su rendimiento en tareas de gran envergadura.
+""")
